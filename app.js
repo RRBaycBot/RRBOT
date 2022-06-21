@@ -21,12 +21,12 @@ function formatAndSendTweet(event) {
     const formattedEthPrice = formattedUnits * tokenEthPrice;
     const formattedUsdPrice = formattedUnits * tokenUsdPrice;
 
-    const tweetText = `${assetName} bought for ${formattedEthPrice}${ethers.constants.EtherSymbol} ($${Number(formattedUsdPrice).toFixed(2)}) #NFT ${openseaLink}`;
+    const tweetText = `${assetName} bought for ${formattedEthPrice}${ethers.constants.EtherSymbol} ($${Number(formattedUsdPrice).toFixed(2)})\n ${openseaLink}\n ##RRBAYC #BURNBAYC  https://apemarket.com`;
 
     console.log(tweetText);
 
     // OPTIONAL PREFERENCE - don't tweet out sales below X ETH (default is 1 ETH - change to what you prefer)
-    // if (Number(formattedEthPrice) < 1) {
+    // if (Number(formattedEthPrice) < 0.15) {
     //     console.log(`${assetName} sold below tweet price (${formattedEthPrice} ETH).`);
     //     return;
     // }
