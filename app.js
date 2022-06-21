@@ -21,7 +21,7 @@ function formatAndSendTweet(event) {
     const formattedEthPrice = formattedUnits * tokenEthPrice;
     const formattedUsdPrice = formattedUnits * tokenUsdPrice;
 
-    const tweetText = `RR/BAYC ${assetName} bought for ${formattedEthPrice}${ethers.constants.EtherSymbol} ($${Number(formattedUsdPrice).toFixed(2)})\n ${openseaLink}\n https://apemarket.com\n ##RRBAYC #BURNBAYC`;
+    const tweetText = `RR/BAYC ${assetName} bought for ${formattedEthPrice}${ethers.constants.EtherSymbol} ($${Number(formattedUsdPrice).toFixed(2)})\n ${openseaLink}\n https://apemarket.com\n #RRBAYC #BURNBAYC #NFT`;
 
     console.log(tweetText);
 
